@@ -181,6 +181,8 @@ public class MainActivity extends AppCompatActivity {
         if(item.getItemId() == android.R.id.home){
             finish();
             if(musicPlayer.isPlaying()){
+                musicPlayer.pause();
+                playButton.setBackgroundResource(R.drawable.play_btn);
 
             }
         }
